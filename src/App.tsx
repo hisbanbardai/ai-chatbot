@@ -37,7 +37,7 @@ function App() {
       <main
         className={`min-h-[calc(100vh-200px)] ${mainWidth} bg-[#242627] col-start-1 col-end-2 row-start-2 row-end-3 `}
       >
-        <div className="w-[800px] h-[500px] bg-[#242627] mx-auto relative">
+        <div className="w-[calc(100%-200px)] h-[calc(100vh-200px)] bg-[#242627] mx-auto relative">
           <Chat />
           {selectedConversation ? <ChatInput /> : null}
         </div>
