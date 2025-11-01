@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* For Firefox and IE/Edge compatibility */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
